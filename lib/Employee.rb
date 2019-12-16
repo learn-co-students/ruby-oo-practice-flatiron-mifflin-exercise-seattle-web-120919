@@ -18,6 +18,10 @@ class Employee
         @@all.push(self)
     end
 
+    def manager_name
+        @manager.name
+    end
+
     def self.paid_over(num)
         @@all.find_all do |employee|
             employee.salary > num
